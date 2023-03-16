@@ -1,0 +1,178 @@
+/*-------------------*\
+    VARIABLE DEFINE
+\*-------------------*/
+
+:root{
+    --custom-primary-color: #0A0A27;
+    --custom-brand-color: #FA4321;
+    --custom-bodyfont: 'Montserrat', sans-serif;
+}
+
+/********************************************************************************************************/
+
+/*-------------------*\
+    GENERAL
+\*-------------------*/
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    color: var(--custom-primary-color);
+    font-family: var(--custom-bodyfont);
+    font-size: 18px;
+    line-height: 500;
+    line-height: 1.35;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+a:hover{
+    color: var(--custom-brand-color);
+    text-decoration: none;
+}
+
+a:visited{
+    color: inherit;
+}
+
+img{
+    height: auto;
+    max-width: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-weight: 900;
+}
+
+h1{
+    font-size: 39px;
+    font-weight: 500;
+    margin: 20px 0 70px;
+}
+
+h2{
+    font-size: 30px;
+}
+
+hr.line{
+    background-color: var(--custom-brand-color);
+    height: 2px;
+    margin: 20px 0;
+    width: 55px;
+}
+
+.brand-color{
+    color: var(--custom-brand-color);
+}
+
+/********************************************************************************************************/
+
+/*-------------------*\
+    HEADER
+\*-------------------*/
+
+.site-header{
+    padding: 39px 0 40px;
+}
+
+.main-navigation ul{
+    float: right;
+}
+
+.main-navigation a {
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.main-navigation li{
+    margin-left: 57px;
+}
+
+.main-navigation .header-btn a{
+    background-color: var(--custom-brand-color);
+    color: #ffffff;
+    padding: 6px 10px;
+}
+
+/********************************************************************************************************/
+
+/*-------------------*\
+    HOME
+\*-------------------*/
+
+/*--------------------------------------------------------------
+ * ## TOP-BANNER-SEC
+ *--------------------------------------------------------------
+*/
+
+.top-banner-sec{
+    background-position: center top;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 20px 0 100px;
+}
+
+.testimonial-block{
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 50px 50px 50px 0;
+    position: relative;
+}
+
+.testimonial-block:before {
+    background: #ffffff;
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -50vw;
+    bottom: 0;
+    width: 50vw;
+}
+
+.testimonial-block hr.line + p{
+    margin-top: 30px;
+}
+
+.cite-by {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cite-by span {
+    display: block;
+    font-weight: 700;
+}
+
+.back{
+    display: inline-block;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.second-sec{
+    padding: 50px 0 20px;
+}
+
+.second-sec .img-col{
+    background-color: #F0F2F3;
+    padding: 50px 20px;
+    text-align: center;
+}
